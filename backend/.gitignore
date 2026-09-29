@@ -1,0 +1,13 @@
+target/
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+*.iml
+.idea/
+.classpath
+.project
+.settings/
+.vscode/
+*.log
+HELP.md

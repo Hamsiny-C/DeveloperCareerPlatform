@@ -1,0 +1,74 @@
+{
+    "family":  "DevCareerOS-Task",
+    "containerDefinitions":  [
+                                 {
+                                     "name":  "devcareer-os-backend",
+                                     "image":  "579072312142.dkr.ecr.ap-south-1.amazonaws.com/devcareer-os-backend:latest",
+                                     "cpu":  0,
+                                     "portMappings":  [
+                                                          {
+                                                              "containerPort":  8080,
+                                                              "hostPort":  8080,
+                                                              "protocol":  "tcp",
+                                                              "name":  "devcareer-os-backend-8080-tcp",
+                                                              "appProtocol":  "http"
+                                                          }
+                                                      ],
+                                     "essential":  true,
+                                     "environment":  [
+                                                         {
+                                                             "name":  "SPRING_DATASOURCE_USERNAME",
+                                                             "value":  "admin"
+                                                         },
+                                                         {
+                                                             "name":  "SPRING_DATASOURCE_URL",
+                                                             "value":  "jdbc:mysql://devcareer-os-db.crae0oieo1wo.ap-south-1.rds.amazonaws.com:3306/devcareerdb"
+                                                         },
+                                                         {
+                                                             "name":  "SPRING_DATASOURCE_PASSWORD",
+                                                             "value":  "Hamsiny2007"
+                                                         }
+                                                     ],
+                                     "environmentFiles":  [
+
+                                                          ],
+                                     "mountPoints":  [
+
+                                                     ],
+                                     "volumesFrom":  [
+
+                                                     ],
+                                     "ulimits":  [
+
+                                                 ],
+                                     "logConfiguration":  {
+                                                              "logDriver":  "awslogs",
+                                                              "options":  {
+                                                                              "awslogs-group":  "/ecs/DevCareerOS",
+                                                                              "awslogs-region":  "ap-south-1",
+                                                                              "awslogs-stream-prefix":  "ecs"
+                                                                          }
+                                                          },
+                                     "systemControls":  [
+
+                                                        ]
+                                 }
+                             ],
+    "executionRoleArn":  "arn:aws:iam::579072312142:role/DevCareerOS-ECS-TaskExecutionRole",
+    "networkMode":  "awsvpc",
+    "volumes":  [
+
+                ],
+    "placementConstraints":  [
+
+                             ],
+    "requiresCompatibilities":  [
+                                    "FARGATE"
+                                ],
+    "cpu":  "1024",
+    "memory":  "3072",
+    "runtimePlatform":  {
+                            "cpuArchitecture":  "X86_64",
+                            "operatingSystemFamily":  "LINUX"
+                        }
+}
