@@ -50,7 +50,7 @@ Instead of managing DSA practice, skills, learning progress, projects, certifica
 
 <p align="center">
 
-### 🚀 [Open DevCareer OS](http://dev-career-os-frontend-579072312142.s3-website.ap-south-1.amazonaws.com/)
+### 🚀 [Open DevCareer OS](http://devcareer-os-frontend-579072312142.s3-website.ap-south-1.amazonaws.com/login)
 
 </p>
 
@@ -63,7 +63,7 @@ Instead of managing DSA practice, skills, learning progress, projects, certifica
 **Public URL:**
 
 ```text
-http://dev-career-os-frontend-579072312142.s3-website.ap-south-1.amazonaws.com/
+http://devcareer-os-frontend-579072312142.s3-website.ap-south-1.amazonaws.com/login
 ```
 
 ---
