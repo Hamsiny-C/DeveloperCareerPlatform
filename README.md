@@ -1,28 +1,281 @@
-# DevCareer OS
+# 🚀 DevCareer OS
 
-A personal **Developer Career Operating System** — track your skills, DSA practice,
-learning progress, projects, certifications, job applications and interviews,
-all in one place, with a single dashboard that shows how "placement ready" you are.
+<p align="center">
 
-Built with **Spring Boot + MySQL** (backend) and **React** (frontend).
-Runs entirely on your own machine — no Docker, no cloud, nothing to deploy.
-You'll add that yourself later once you're ready.
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=2800&pause=900&color=00E5FF&center=true&vCenter=true&width=760&lines=Developer+Career+Operating+System;Track+%7C+Practice+%7C+Build+%7C+Get+Placement+Ready" alt="DevCareer OS Animated Title" />
+
+</p>
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/Java-21%2F25-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
+<img src="https://img.shields.io/badge/Spring%20Boot-Backend-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
+<img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+<img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+<img src="https://img.shields.io/badge/JWT-Security-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" />
+
+</p>
+
+<p align="center">
+
+<strong>A full-stack Developer Career Operating System built to manage learning, DSA, skills, projects, certifications, job applications and interviews in one platform.</strong>
+
+</p>
+
+<p align="center">
+
+<a href="http://dev-career-os-frontend-579072312142.s3-website.ap-south-1.amazonaws.com/">
+
+<img src="https://img.shields.io/badge/🌐%20LIVE%20DEMO-OPEN%20DEVCAREER%20OS-00C7B7?style=for-the-badge" alt="Live Demo" />
+
+</a>
+
+</p>
 
 ---
 
-## 1. Required Software
+## ✨ What is DevCareer OS?
 
-Install these before you start:
+**DevCareer OS** is a full-stack platform designed to organize the complete developer placement journey in one place.
 
-| Tool | Version | Notes |
-|---|---|---|
-| JDK | 21 or 25 | The project compiles to Java 21 bytecode (LTS), which runs perfectly fine on a JDK 25 installation — Java is backward compatible. |
-| Maven | 3.9+ | Usually bundled with Spring Tools for Eclipse / most IDEs |
-| MySQL | 8.x | MySQL Community Server + MySQL Workbench (or any MySQL client) |
-| Node.js | 18+ | For running the React frontend (includes npm) |
-| An IDE | — | Spring Tools for Eclipse / IntelliJ / VS Code — whatever you prefer |
+Instead of managing DSA practice, skills, learning progress, projects, certifications, job applications and interviews across multiple platforms, DevCareer OS brings everything into a centralized dashboard.
 
-Check your installed versions:
+### 🎯 Core Goal
+
+> **Track → Learn → Practice → Build → Apply → Prepare → Get Placement Ready**
+
+---
+
+## 🌐 Live Application
+
+<p align="center">
+
+### 🚀 [Open DevCareer OS](http://dev-career-os-frontend-579072312142.s3-website.ap-south-1.amazonaws.com/)
+
+</p>
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/●%20LIVE-ONLINE-22C55E?style=for-the-badge" />
+
+</p>
+
+**Public URL:**
+
+```text
+http://dev-career-os-frontend-579072312142.s3-website.ap-south-1.amazonaws.com/
+```
+
+---
+
+## 🧩 Features
+
+| Module               | Features                               |
+| -------------------- | -------------------------------------- |
+| 🔐 Authentication    | Register, Login, JWT Authentication    |
+| 👤 Developer Profile | Manage developer information           |
+| 📊 Dashboard         | Centralized placement progress         |
+| 💻 Skills            | Track technologies and progress        |
+| 🧠 DSA               | Track coding problems and practice     |
+| 📚 Learning          | Manage learning topics                 |
+| 🚀 Projects          | Track portfolio projects               |
+| 🏆 Certifications    | Manage certifications and achievements |
+| 💼 Applications      | Track job applications                 |
+| 🎤 Interviews        | Manage interview preparation           |
+| 🔒 Security          | Spring Security + JWT                  |
+| 🗄️ Database         | MySQL + JPA + Hibernate                |
+
+---
+
+## 🏗️ System Architecture
+
+```text
+                         🌐 USER
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │    React Frontend   │
+                │      Amazon S3      │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │ Application Load    │
+                │      Balancer       │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │   Spring Boot API   │
+                │    ECS Fargate      │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │      MySQL          │
+                │     Amazon RDS      │
+                └─────────────────────┘
+
+                 Docker → Amazon ECR
+```
+
+---
+
+## 🛠️ Technology Stack
+
+### Backend
+
+* ☕ Java
+* 🌱 Spring Boot
+* 🌐 Spring Web
+* 🗃️ Spring Data JPA
+* 🔐 Spring Security
+* 🎫 JWT
+* 📦 Maven
+
+### Frontend
+
+* ⚛️ React
+* ⚡ Vite
+* 🟨 JavaScript
+* 🔗 Axios
+* 🎨 HTML5
+* 🎨 CSS3
+
+### Database
+
+* 🐬 MySQL
+* Hibernate
+* JPA
+
+### Cloud & DevOps
+
+* 🐳 Docker
+* 📦 Amazon ECR
+* 🚀 Amazon ECS Fargate
+* 🌐 Application Load Balancer
+* 🪣 Amazon S3
+* 🗄️ Amazon RDS
+* ☁️ AWS VPC
+
+---
+
+## 📁 Project Structure
+
+```text
+devcareer-os/
+│
+├── backend/
+│   ├── src/main/java/com/devcareeros/
+│   │   ├── config/
+│   │   ├── controller/
+│   │   ├── dto/
+│   │   ├── entity/
+│   │   ├── exception/
+│   │   ├── repository/
+│   │   ├── security/
+│   │   └── service/
+│   │
+│   ├── src/main/resources/
+│   └── pom.xml
+│
+├── frontend/
+│   └── src/
+│       ├── api/
+│       ├── components/
+│       ├── pages/
+│       └── styles/
+│
+├── database/
+│   └── setup.sql
+│
+└── README.md
+```
+
+---
+
+## 🔐 Authentication Flow
+
+```text
+                 React Login
+                      │
+                      ▼
+             POST /api/auth/login
+                      │
+                      ▼
+              Spring Security
+                      │
+                      ▼
+                  JWT Token
+                      │
+                      ▼
+              Frontend Storage
+                      │
+                      ▼
+        Authorization: Bearer <token>
+                      │
+                      ▼
+             Protected REST APIs
+```
+
+---
+
+## 🔄 Application Data Flow
+
+```text
+┌─────────────┐
+│   React UI  │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│    Axios    │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│   REST API  │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│ Controller  │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│   Service   │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│ Repository  │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Hibernate  │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│    MySQL    │
+└─────────────┘
+```
+
+---
+
+## ⚙️ Required Software
+
+| Tool    | Version                           |
+| ------- | --------------------------------- |
+| JDK     | 21 or 25                          |
+| Maven   | 3.9+                              |
+| MySQL   | 8.x                               |
+| Node.js | 18+                               |
+| IDE     | Spring Tools / IntelliJ / VS Code |
+
+Check installed versions:
 
 ```bash
 java -version
@@ -34,104 +287,44 @@ npm -version
 
 ---
 
-## 2. Project Structure
+## 🗄️ Database Setup
 
+Create the database:
+
+```sql
+CREATE DATABASE IF NOT EXISTS devcareer_os
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_unicode_ci;
 ```
-devcareer-os/
-├── backend/                  Spring Boot application (Maven project)
-│   ├── src/main/java/com/devcareeros/
-│   │   ├── config/           Security & CORS configuration
-│   │   ├── controller/       REST controllers (@RestController)
-│   │   ├── dto/               Data Transfer Objects (request/response shapes)
-│   │   ├── entity/            JPA entities (@Entity classes -> MySQL tables)
-│   │   ├── exception/         Custom exceptions + global error handler
-│   │   ├── repository/        Spring Data JPA repositories
-│   │   ├── security/          JWT filter, JWT util, UserDetails implementation
-│   │   ├── service/           Business logic
-│   │   └── DevcareerOsApplication.java   <- main() entry point
-│   ├── src/main/resources/application.properties
-│   └── pom.xml
-│
-├── frontend/                  React application (Vite)
-│   └── src/
-│       ├── api/                axios instance + AuthContext
-│       ├── components/         Sidebar/layout, progress bars, modal, etc.
-│       ├── pages/               Login, Register, Dashboard, Skills, DSA, ...
-│       └── styles/global.css    All the app's visual styling
-│
-├── database/
-│   └── setup.sql               Creates the empty MySQL database
-│
-└── README.md                   You are here
+
+Hibernate automatically creates and updates the required tables from the JPA entities.
+
+Configure local database credentials in:
+
+```text
+backend/src/main/resources/application.properties
 ```
+
+For production, use environment variables instead of committing real credentials.
 
 ---
 
-## 3. Database Setup (MySQL)
+## ▶️ Run Locally
 
-1. Open MySQL Workbench (or your CLI / DBeaver) and connect to your local MySQL server.
-2. Run the script at `database/setup.sql`:
-
-   ```sql
-   CREATE DATABASE IF NOT EXISTS devcareer_os
-       CHARACTER SET utf8mb4
-       COLLATE utf8mb4_unicode_ci;
-   ```
-
-   That's it — **you don't need to create any tables yourself.** Hibernate (via
-   `spring.jpa.hibernate.ddl-auto=update`) will automatically create every table
-   the first time you start the backend, based on the `@Entity` classes.
-
-3. Make sure the database credentials in
-   `backend/src/main/resources/application.properties` match your local MySQL
-   setup:
-
-   ```properties
-   spring.datasource.url=jdbc:mysql://localhost:3306/devcareer_os?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
-   spring.datasource.username=root
-   spring.datasource.password=root
-   ```
-
-   Change `username`/`password` to your own MySQL root password (or the
-   dedicated user you create in `setup.sql`).
-
----
-
-## 4. Running the Backend
-
-From inside the `backend/` folder:
+### Backend
 
 ```bash
 cd backend
 mvn spring-boot:run
 ```
 
-Or, from your IDE: right-click `DevcareerOsApplication.java` → **Run As → Java
-Application** (or **Spring Boot App**).
+Backend:
 
-If everything is configured correctly, you'll see:
-
-```
-DevCareer OS backend is running!
-API base URL: http://localhost:8080/api
+```text
+http://localhost:8080
 ```
 
-Hibernate will print a series of `create table ...` statements the very first
-time it runs — that's it building your schema automatically. On every run
-after that, it will just verify/update the schema.
-
-**Building a runnable JAR** (optional, still 100% local — no Docker):
-
-```bash
-mvn clean package
-java -jar target/devcareer-os.jar
-```
-
----
-
-## 5. Running the Frontend
-
-From inside the `frontend/` folder:
+### Frontend
 
 ```bash
 cd frontend
@@ -139,186 +332,218 @@ npm install
 npm run dev
 ```
 
-Vite will start the React dev server, normally at:
+Frontend:
 
-```
+```text
 http://localhost:5173
 ```
 
-Open that URL in your browser. Register a new account, log in, and start
-using the app. The frontend is pre-configured to call the backend at
-`http://localhost:8080/api` (see `src/api/axios.js`), and the backend's CORS
-config already allows requests from `http://localhost:5173`.
-
 ---
 
-## 6. Testing the API with Postman
+## 🧪 REST API
 
-1. **Register a user**
+### Authentication
 
-   `POST http://localhost:8080/api/auth/register`
-
-   Body (raw JSON):
-   ```json
-   {
-     "fullName": "Jane Doe",
-     "email": "jane@example.com",
-     "password": "password123"
-   }
-   ```
-
-   Response includes a `token` field — copy it.
-
-2. **Login**
-
-   `POST http://localhost:8080/api/auth/login`
-   ```json
-   { "email": "jane@example.com", "password": "password123" }
-   ```
-
-3. **Call a protected endpoint**
-
-   For every other endpoint, add this header in Postman:
-
-   ```
-   Authorization: Bearer <paste the token here>
-   ```
-
-   Example — add a skill:
-
-   `POST http://localhost:8080/api/skills`
-   ```json
-   { "name": "Java", "category": "Backend", "level": "Advanced", "progressPercentage": 80 }
-   ```
-
-   `GET http://localhost:8080/api/skills` (with the same header) will now
-   return that skill.
-
-Full list of endpoints:
-
-```
-POST   /api/auth/register
-POST   /api/auth/login
-
-GET    /api/profile
-PUT    /api/profile
-
-GET    /api/dashboard/summary
-
-GET    /api/skills            POST /api/skills
-PUT    /api/skills/{id}       DELETE /api/skills/{id}
-
-GET    /api/dsa               POST /api/dsa
-PUT    /api/dsa/{id}          DELETE /api/dsa/{id}
-
-GET    /api/learning          POST /api/learning
-PUT    /api/learning/{id}     DELETE /api/learning/{id}
-
-GET    /api/projects          POST /api/projects
-PUT    /api/projects/{id}     DELETE /api/projects/{id}
-
-GET    /api/certifications        POST /api/certifications
-PUT    /api/certifications/{id}   DELETE /api/certifications/{id}
-
-GET    /api/applications      POST /api/applications
-PUT    /api/applications/{id} DELETE /api/applications/{id}
-
-GET    /api/interviews        POST /api/interviews
-PUT    /api/interviews/{id}   DELETE /api/interviews/{id}
+```text
+POST /api/auth/register
+POST /api/auth/login
 ```
 
----
+### Profile
 
-## 7. Verifying Data in MySQL
-
-After adding a skill (or any other item) through Postman or the React app,
-open MySQL Workbench and run:
-
-```sql
-USE devcareer_os;
-SELECT * FROM users;
-SELECT * FROM skills;
-SELECT * FROM dsa_problems;
-SELECT * FROM learning_topics;
-SELECT * FROM projects;
-SELECT * FROM certifications;
-SELECT * FROM job_applications;
-SELECT * FROM interviews;
+```text
+GET /api/profile
+PUT /api/profile
 ```
 
-You should see your data there — this is the best way to build a mental model
-of how the React form → REST API → Service → Repository → Hibernate → MySQL
-chain actually works.
+### Dashboard
+
+```text
+GET /api/dashboard/summary
+```
+
+### Skills
+
+```text
+GET    /api/skills
+POST   /api/skills
+PUT    /api/skills/{id}
+DELETE /api/skills/{id}
+```
+
+### DSA
+
+```text
+GET    /api/dsa
+POST   /api/dsa
+PUT    /api/dsa/{id}
+DELETE /api/dsa/{id}
+```
+
+### Learning
+
+```text
+GET    /api/learning
+POST   /api/learning
+PUT    /api/learning/{id}
+DELETE /api/learning/{id}
+```
+
+### Projects
+
+```text
+GET    /api/projects
+POST   /api/projects
+PUT    /api/projects/{id}
+DELETE /api/projects/{id}
+```
+
+### Certifications
+
+```text
+GET    /api/certifications
+POST   /api/certifications
+PUT    /api/certifications/{id}
+DELETE /api/certifications/{id}
+```
+
+### Job Applications
+
+```text
+GET    /api/applications
+POST   /api/applications
+PUT    /api/applications/{id}
+DELETE /api/applications/{id}
+```
+
+### Interviews
+
+```text
+GET    /api/interviews
+POST   /api/interviews
+PUT    /api/interviews/{id}
+DELETE /api/interviews/{id}
+```
 
 ---
 
-## 8. Default Configuration Reference
+## 🧠 Key Concepts Demonstrated
 
-| Setting | Value |
-|---|---|
-| Backend URL | `http://localhost:8080` |
-| Frontend URL (dev) | `http://localhost:5173` |
-| MySQL database name | `devcareer_os` |
-| Default DB username | `root` (change in `application.properties`) |
-| JWT token lifetime | 24 hours |
-| Table creation strategy | `spring.jpa.hibernate.ddl-auto=update` (auto) |
+This project demonstrates practical implementation of:
 
----
-
-## 9. Core Concepts Used in This Project (quick glossary)
-
-- **Object** — a runtime instance of a class, holding actual data (e.g. one specific `User`).
-- **Class** — the blueprint/template that defines what fields and behavior objects of that type will have.
-- **Constructor** — a special method used to create and initialize a new object.
-- **Interface** — a contract listing method signatures with no implementation; a class "implements" it and provides the actual code (e.g. `UserRepository extends JpaRepository`).
-- **Dependency Injection (DI)** — instead of a class creating its own dependencies with `new`, Spring "injects" them automatically (via `@Autowired`). This makes code loosely coupled and easy to test.
-- **REST** — an architectural style for web APIs based on resources (URLs) and standard HTTP verbs (GET/POST/PUT/DELETE).
-- **HTTP** — the protocol browsers/clients use to talk to servers (requests and responses).
-- **JDBC** — the low-level Java API for talking directly to a relational database with SQL.
-- **JPA** — a specification (a set of interfaces) describing how Java objects map to database tables.
-- **Hibernate** — the actual implementation of JPA that Spring Boot uses under the hood.
-- **Entity** — a Java class annotated with `@Entity`, representing one database table.
-- **Repository** — an interface (usually extending `JpaRepository`) that gives you database CRUD operations without writing SQL.
-- **Service** — a class that holds business logic, sitting between controllers and repositories.
-- **Controller** — a class annotated with `@RestController` that exposes REST endpoints (URLs) to the outside world.
-- **DTO (Data Transfer Object)** — a plain class used to shape the JSON that goes in/out of the API, separate from the database entity.
-- **JWT (JSON Web Token)** — a signed token issued at login, sent on every future request to prove who you are, without the server needing to store a session.
-- **Spring Security** — the framework that intercepts every request, checks the JWT, and decides whether it's allowed through.
-
-Key annotations you'll see throughout the backend:
-
-| Annotation | What it does |
-|---|---|
-| `@Entity` | Marks a class as mapped to a database table |
-| `@Id` | Marks the primary key field |
-| `@GeneratedValue` | Tells the DB to auto-increment the id |
-| `@Service` | Marks a class as a Spring-managed service bean |
-| `@Repository` | Marks a class/interface as a Spring-managed repository bean |
-| `@RestController` | Marks a class as a REST API controller |
-| `@GetMapping` / `@PostMapping` / `@PutMapping` / `@DeleteMapping` | Map an HTTP verb + path to a method |
-| `@Autowired` | Injects a required dependency (constructor/field injection) |
+* Object-Oriented Programming
+* Dependency Injection
+* REST API architecture
+* HTTP request/response flow
+* DTOs
+* JPA
+* Hibernate
+* Repository Pattern
+* Service Layer
+* Spring Security
+* JWT Authentication
+* MySQL Integration
+* React Integration
+* Docker
+* AWS Deployment
+* Amazon ECS
+* Amazon ECR
+* Amazon S3
+* Amazon RDS
+* Application Load Balancing
 
 ---
 
-## 10. What's intentionally NOT included
+## 🚀 AWS Deployment
 
-As requested, this project contains **no** Docker, Dockerfile, docker-compose,
-AWS/VPC/EC2/RDS, Terraform, CI/CD (GitHub Actions), Kubernetes, or deployment
-scripts of any kind. It's a plain local full-stack app you run with `mvn
-spring-boot:run` and `npm run dev`. Containerizing and deploying it is left
-for you to do as your next learning step.
+```text
+                     AWS CLOUD
+                        │
+                        ▼
+              ┌─────────────────┐
+              │   Amazon S3     │
+              │ React Frontend  │
+              └────────┬────────┘
+                       │
+                       ▼
+              ┌─────────────────┐
+              │      ALB        │
+              └────────┬────────┘
+                       │
+                       ▼
+              ┌─────────────────┐
+              │  ECS Fargate    │
+              │  Spring Boot    │
+              └────────┬────────┘
+                       │
+                       ▼
+              ┌─────────────────┐
+              │   Amazon RDS    │
+              │      MySQL      │
+              └─────────────────┘
+
+          Docker → ECR → ECS Fargate
+```
 
 ---
 
-## 11. Suggested Next Steps
+## 📌 Project Highlights
 
-1. Run the backend, confirm the tables appear in MySQL.
-2. Run the frontend, register an account, and poke around every page.
-3. Read through `SecurityConfig.java` and `JwtAuthFilter.java` — this is the
-   heart of the authentication flow and a very common interview topic.
-4. Once comfortable, containerize the backend and frontend with Docker on
-   your own, and eventually deploy them (e.g. to AWS) as your next milestone.
+* 🚀 Full-stack Java application
+* 🔐 JWT-based authentication
+* 🌐 RESTful backend
+* ⚛️ React frontend
+* 🗄️ MySQL persistence
+* 🐳 Docker containerization
+* ☁️ AWS cloud deployment
+* 📦 Amazon ECR
+* 🚀 Amazon ECS Fargate
+* 🪣 Amazon S3
+* 🗄️ Amazon RDS
+* 🌐 Application Load Balancer
+* 📊 Placement-focused dashboard
+* 🧠 DSA and learning progress tracking
+* 💼 Job application tracking
+* 🎤 Interview preparation management
 
-Good luck with your placement prep — you've now got a real project to talk
-about in interviews, and the practical example to actually reason about JPA,
-Spring Security and REST design when asked.
+---
+
+## 👨‍💻 Developer
+
+### Hamsiny C
+
+**Java Full Stack Developer**
+
+<p align="center">
+
+<a href="https://github.com/Hamsiny-C">
+<img src="https://img.shields.io/badge/GitHub-Hamsiny--C-181717?style=for-the-badge&logo=github" />
+</a>
+
+<a href="https://www.linkedin.com/in/hamsiny-c-9b03a2349">
+<img src="https://img.shields.io/badge/LinkedIn-Hamsiny%20C-0A66C2?style=for-the-badge&logo=linkedin" />
+</a>
+
+<a href="https://leetcode.com/u/GEWCJhefXN/">
+<img src="https://img.shields.io/badge/LeetCode-Hamsiny-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" />
+</a>
+
+</p>
+
+---
+
+<p align="center">
+
+<a href="http://dev-career-os-frontend-579072312142.s3-website.ap-south-1.amazonaws.com/">
+
+<img src="https://img.shields.io/badge/🚀%20LAUNCH%20DEVCAREER%20OS-00C7B7?style=for-the-badge" />
+
+</a>
+
+</p>
+
+<p align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:0EA5E9,100:06B6D4&height=120&section=footer" />
+
+</p>
